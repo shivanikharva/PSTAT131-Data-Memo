@@ -1,0 +1,25 @@
+#PSTAT 131 Data Memo
+
+## Overview of Dataset  
+My dataset includes 10 features (Group (Demented/Nondemented/Converted), Gender, Age, Years of Education, Socioeconomic Status, Mini Mental State Exam Score, Clnical Dementia Rating, Estimated Total Intracranial Volume, Normalized Whole Brain Volume, Atlas Scaling Factor) about patients with Alzheimer's Disease who have been tested for whether they have Alzheimer's Dementia as well, if they have converted from Alzheimer's Disease without dementia to Alzheimer's Dementia, or if they have Alzheimer's Disease without dementia. I will be obtaining the data through Kaggle [here](https://www.kaggle.com/datasets/brsdincer/alzheimer-features). The data has 373 observations and 9 predictors (Age, Years of Education, Socioeconomic Status, Mini Mental State Exam Score, Clnical Dementia Rating, Estimated Total Intracranial Volume, Normalized Whole Brain Volume, Atlas Scaling Factor). I will be working with both numerical/quantitative variables (Age, Years of Education, etc.) and qualitative/categorical variables (Gender, Group (the response), etc.). There is missing data: the Socioeconomic Status column is missing 19 (5%) values and the Mini Mental State Examination column is missing 2 (<1%) values. Since the amount of missing values is not very large, I would like to take the average of the columns and impute the missing data.  
+
+## Overview of Research Question(s)  
+I am interested in predicting the Group variable, which determines which stage of dementia a given Alzheimer's patient is at. I am interested in answering whether both medical/biological as well as environmental/societal variables come into play when determining a patients' severity of Alzheimer's since Alzheimer's becomes much more dangerous when it is Alzheimer's Dementia. So, the response variable in my project would be Group, which classifies Alzheimer's patients depending on what level of dementia they are at: Demented, Nondemented, Converted (Nondemented to Demented). These questions will be answered with a classification approach because the response variable, Group, is qualitative/categorical. I think the predictors that will be especially useful might be Age and Mini Mental State Examination. However, the ones I am most interested in seeing if there is an existing relationship are Gender, Socioeconomic Status, and Years of Education. The goal of my model is both predictive and inferential. It is predictive because I want to see how all the predictors together affect an Alzheimer's patients' dementia status, but it is also inferential because I want to see the effect of specific predictors as well and test my theories.  
+## Proposed Project Timeline   
+**Week 1**: *Search for data, complete Data Memo*  
+**Week 2**: *Load data, tidy*      
+**Week 3**: *Run EDA, write up analysis (EDA)*      
+**Week 4**: *Run EDA, write up analysis (EDA)*         
+**Week 5**: *Run different models, write down analysis of what happens in each model (Feature Extraction, Data Splitting, Model Fitting)*     
+**Week 6**: *Run different models, write down analysis of what happens in each model (Feature Extraction, Data Splitting, Model Fitting)*   
+**Week 7**: *Run different models, write down analysis of what happens in each model (Feature Extraction, Data Splitting, Model Fitting)*   
+**Week 8**: *Write up results (Narration)*    
+**Week 9**: *Write up entire draft of paper, make edits (Narration, Code, Organization & Structure)*    
+**Week 10**: *Double check final draft of project and submit*    
+
+## Questions or Concerns  
+My main concern with the project is whether we will learn everything we need to know to complete our projects as we go. I would be really stressed if we learned a key component of my project closer to the end of the quarter and I had to scramble to get that work done. Is there any way to adjust for this? Other than that, I am all good!  
+
+
+
+
