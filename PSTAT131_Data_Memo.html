@@ -361,50 +361,48 @@ display: none;
 <p>#PSTAT 131 Data Memo</p>
 <div id="overview-of-dataset" class="section level2">
 <h2>Overview of Dataset</h2>
-<p>My dataset includes 10 features (Group
-(Demented/Nondemented/Converted), Gender, Age, Years of Education,
-Socioeconomic Status, Mini Mental State Exam Score, Clnical Dementia
-Rating, Estimated Total Intracranial Volume, Normalized Whole Brain
-Volume, Atlas Scaling Factor) about patients with Alzheimer’s Disease
-who have been tested for whether they have Alzheimer’s Dementia as well,
-if they have converted from Alzheimer’s Disease without dementia to
-Alzheimer’s Dementia, or if they have Alzheimer’s Disease without
-dementia. I will be obtaining the data through Kaggle <a href="https://www.kaggle.com/datasets/brsdincer/alzheimer-features">here</a>.
-The data has 373 observations and 9 predictors (Age, Years of Education,
-Socioeconomic Status, Mini Mental State Exam Score, Clnical Dementia
-Rating, Estimated Total Intracranial Volume, Normalized Whole Brain
-Volume, Atlas Scaling Factor). I will be working with both
-numerical/quantitative variables (Age, Years of Education, etc.) and
-qualitative/categorical variables (Gender, Group (the response), etc.).
-There is missing data: the Socioeconomic Status column is missing 19
-(5%) values and the Mini Mental State Examination column is missing 2
-(&lt;1%) values. Since the amount of missing values is not very large, I
-would like to take the average of the columns and impute the missing
-data.</p>
+<p>My dataset includes 41 columns, each containing stats about Pokemon
+(hp, name, capture rate, etc.) from the Pokemon games. I will be
+obtaining the data from a Kaggle dataset: <a href="https://www.kaggle.com/datasets/hasanarcas/pokemon-stats-dataset">Pokemon
+Stats Dataset</a>. The Kaggle dataset was scraped from the <a href="https://pokemondb.net/pokedex/all">Pokemon Database</a>. There are
+801 observations and 40 predictors. I will be working with both
+quantitative/numeric variables (hp, capture rate, etc.) and
+qualitative/categorical variables (Pokemon type, etc.). The data does
+have missing values in the height (2% missing), weight (2% missing),
+percentage of that Pokemon that are male (12% missing), and the second
+type of the Pokemon (48% missing). I do not plan to use the first three
+of those predictors in analysis (since I will not be using all 40
+predictors), but if I find in my EDA that the variables appear to be
+significant, I would impute the missing values with the averages of
+those columns. As for the second type of the Pokemon, it is fitting that
+this column has the greatest percentage of missing data because only
+specific Pokemon have second types. I would like to use type in my
+analysis so I will either only take the first main type into account or
+maybe compare Pokemon with one versus two types.</p>
 </div>
 <div id="overview-of-research-questions" class="section level2">
 <h2>Overview of Research Question(s)</h2>
-<p>I am interested in predicting the Group variable, which determines
-which stage of dementia a given Alzheimer’s patient is at. I am
-interested in answering whether both medical/biological as well as
-environmental/societal variables come into play when determining a
-patients’ severity of Alzheimer’s since Alzheimer’s becomes much more
-dangerous when it is Alzheimer’s Dementia. So, the response variable in
-my project would be Group, which classifies Alzheimer’s patients
-depending on what level of dementia they are at: Demented, Nondemented,
-Converted (Nondemented to Demented). These questions will be answered
-with a classification approach because the response variable, Group, is
-qualitative/categorical. I think the predictors that will be especially
-useful might be Age and Mini Mental State Examination. However, the ones
-I am most interested in seeing if there is an existing relationship are
-Gender, Socioeconomic Status, and Years of Education. The goal of my
-model is both predictive and inferential. It is predictive because I
-want to see how all the predictors together affect an Alzheimer’s
-patients’ dementia status, but it is also inferential because I want to
-see the effect of specific predictors as well and test my
-theories.<br />
-## Proposed Project Timeline<br />
-<strong>Week 1</strong>: <em>Search for data, complete Data
+<p>I am interested in predicting the capture rate (capture_rate) of the
+Pokemon. I would like to whether specific qualities about a Pokemon (hp,
+speed, type, etc.) make it harder to capture. The response is the
+capture rate of the Pokemon (capture_rate). The capture rate is measured
+in the Pokedex on a scale from 0 to 255, with higher values being
+associated with easier capture. Since the response is
+numeric/quantitative, I think the questions will be answered with a
+regression approach. I think the predictors that will be especially
+useful are the hp, type, and maybe whether the Pokemon is legendary or
+not because those qualities have made Pokemon either harder or easier
+for me to capture in my own experience. The goal of my model is to be a
+combination of all three types of models. I would like to illustrate any
+visible trends variables have in relation to the capture rate
+(descriptive). I would also like to predict the capture rate based on
+all the chosen variables (predictive), but I think it would definitely
+be beneficial to look into whether specific variables influence capture
+rate more than others (inferential).</p>
+</div>
+<div id="proposed-project-timeline" class="section level2">
+<h2>Proposed Project Timeline</h2>
+<p><strong>Week 1</strong>: <em>Search for data, complete Data
 Memo</em><br />
 <strong>Week 2</strong>: <em>Load data, tidy</em><br />
 <strong>Week 3</strong>: <em>Run EDA, write up analysis (EDA)</em><br />
